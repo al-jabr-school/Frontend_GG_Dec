@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms 2</title>
+    <style>
+      fieldset {
+        width: 300px;
+        margin-block: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="ism">Your name</label>
+      <input type="text" id="ism" />
+
+      <fieldset>
+        <legend>Gender</legend>
+        <div>
+          <input type="radio" name="gender" id="erkak" />
+          <label for="erkak">Male</label>
+        </div>
+
+        <div>
+          <input type="radio" name="gender" id="ayol" />
+          <label for="ayol">Female</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Favorite programming language</legend>
+
+        <div>
+          <input type="radio" name="language" id="php" />
+          <label for="php">PHP</label>
+        </div>
+        <div>
+          <input type="radio" name="language" id="c" />
+          <label for="c">C</label>
+        </div>
+        <div>
+          <input type="radio" name="language" id="java" />
+          <label for="java">Java</label>
+        </div>
+        <div>
+          <input type="radio" name="language" id="other" />
+          <label for="other">Other</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>My favorite subjects</legend>
+
+        <div>
+          <input type="checkbox" name="subject" id="fizika" />
+          <label for="fizika">Fizika</label>
+        </div>
+        <div>
+          <input type="checkbox" name="subject" id="it" />
+          <label for="it">IT</label>
+        </div>
+        <div>
+          <input type="checkbox" name="subject" id="ingliz-tili" />
+          <label for="ingliz-tili">Ingliz tili</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="subject"
+            id="matematika"
+            checked
+            disabled
+          />
+          <label for="matematika">Matematika</label>
+        </div>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
